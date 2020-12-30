@@ -1,0 +1,10 @@
+<div class="container-list">
+  <ul class="list" *ngFor="let item of data; let i = index">
+    <li class="list-item" *ngIf="i < 10">
+      Ranking: <b>{{ i + 1 }}</b> -
+      País: <b>{{ item.Country }}</b> - Casos ativos:
+      <b>{{ item.Premium.active }}</b>
+    </li>
+  </ul>
+
+</div>
